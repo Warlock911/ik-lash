@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ik Lash & Beauty Station</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Fonts */
+    * {
+      font-family: Pacifico, Arial, Helvetica, sans-serif;
+      color: black;
+    }
+
+    /* Header */
+
+    /* header {
+      /* min-width: fit-content;     */
+    /* } */ */
+
+    section {
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('background.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      /* color: #333; */
+      background-color: white;
+    }
+
+    header {
+      background-color: black;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    nav ul {
+      background-color: black;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 50px;
+      background-image: url('eyelash-banner.jpg');
+      background-size: cover;
+      background-position: center;
+      /* color: white; */
+    }
+
+    .hero h1 {
+      font-size: 2.5em;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+    }
+
+    .logo {
+      width: 100%;
+    }
+
+    .services {
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* .services h2 {
+      /* color: white; */
+    /* } */ */
+
+    .services .card {
+      display: inline-block;
+      margin: 10px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      background-color: white;
+      width: 200px;
+    }
+
+    .price-list {
+      text-align: center;
+    }
+
+    .about {
+      text-align: center;
+      margin: 5%;
+    }
+
+    .about p {
+      text-align: start;
+    }
+
+    .owner {
+      /* color: white; */
+      text-align: center;
+      margin: 5%;
+    }
+
+    .owner-details {
+      display: flex;
+      color: white;
+    }
+
+
+
+
+    .owner-image {
+      width: 30vw;
+    }
+
+    .contact {
+      color: white;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: rgba(255, 111, 97, 0.9);
+      color: white;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    /* Related to Form */
+
+    .form {
+      margin: 5%;
+    }
+
+    form {
+      margin: 15px 5px;
+      width: 70%;
+      font-size: 16px;
+    }
+
+    .form h2 {
+      margin: 0px;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      resize: vertical;
+      border: 0;
+      outline: 0;
+      border-bottom: 1px black solid;
+    }
+
+    .gender {
+      display: flex;
+      width: 6%;
+    }
+
+    form button {
+      background: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      margin-top: 5px;
+      border: none;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background: green;
+    }
+
+    .main-banner-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    /* Related to Contact Us */
+    .contact label {
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+
+    .contact a {
+      margin-top: 50px;
+    }
+
+
+    /* Related to Images */
+    img {
+      height: 80vh;
+      max-width: 100%;
+    }
+
+    .main-banner {
+      height: 40vh;
+      width: 100%;
+    }
+
+    .services-image {
+      height: 40vh;
+    }
+
+    .price-list {
+      min-height: 80vh;
+    }
+
+    .owner-image {
+      height: 50vh;
+      width: auto;
+      margin-right: 5%;
+    }
+
+    footer {
+      width: 100%;
+    }
+
+    @media (max-width: 600px) {
+      .owner-details {
+        flex-direction: column;
+        /* color: white; */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    Ik Lash & Beauty Station
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#" onclick="scrollToSection('home')">Home</a></li>
+      <li><a href="#" onclick="scrollToSection('services')">Services</a></li>
+      <li><a href="#" onclick="scrollToSection('price-list')">Price List</a></li>
+      <li><a href="#" onclick="scrollToSection('about')">About</a></li>
+      <li><a href="#" onclick="scrollToSection('owner')">Owner Profile</a></li>
+      <li><a href="#" onclick="scrollToSection('contact')">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="hero">
+    <h1>Welcome to Ik Lash & Beauty Station</h1>
+    <p>Enhance your beauty with our premium eyelash and beauty services.</p>
+  </section>
+
+  <section id="logo">
+    <div class="main-banner-container">
+      <img src="Images/Logo.png" class="main-banner" />
+    </div>
+  </section>
+
+
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <!-- <div class="card">Classic Lash Extensions</div>
+    <div class="card">Volume Lash Extensions</div>
+    <div class="card">Lash Lift and Tint</div>
+    <div class="card">Nail Artistry</div>
+    <div class="card">Make-up and Dressing</div>  -->
+
+    <img src="Images/Services-Banner.png" alt="Our Services Banner" class="services-image" />
+    <img src="Images/Services.png" alt="Our Services" class="services-image" />
+
+
+    <!-- <h3>Eyelashes (Chinese)</h3>
+    <img src="/Images/Eyelashes.png" alt="Eyelash-Styles (Chinese)" class="main-image" /> -->
+
+    <!-- <h3>Eyelashes</h3>. -->
+
+  </section>
+
+  <section id="price-list" class="price-list">
+    <h2>Price List</h2>
+    <!-- <h3>Price List (Chinese)</h3>
+    <img src="Images/Prices-Chinese.png" alt="Prices List (Chinese)" class="main-image" /> -->
+
+    <!-- <h3>Price List</h3> -->
+    <img src="Images/Prices.png" alt="Price List" class="price-list" />
+
+    <!-- <h3>Price List Eyelash Enhancements</h3> -->
+    <img src="Images/Prices-Eyelash-Enhancements.png" alt="Price Eyelash Enhancements" class="price-list" />
+
+    <!-- <h3>Price List Eyelash Extensions</h3>
+    <img src="Images/Prices-Eyelashes-Chinese.png" alt="Price" class="main-image" /> -->
+
+    <!-- <h3>Price List Face Spa Treatment (Chinese)</h3>
+    <img src="Images/Prices-Face-Spa-Chinese.png" alt="Price List Face Spa Treatment (Chinese)" class="main-image" /> -->
+
+    <!-- <h3>Price List Face Spa Treatment</h3> -->
+    <img src="Images/Prices-Face-Spa.png" alt="Price List Face Spa Treatment" class="price-list" />
+
+    «
+
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>At Elegant Lashes, we are passionate about helping you look and feel your best. Our expert technicians specialize
+      in creating beautiful, customized eyelash designs tailored to your style and preferences.</p>
+    <h3>Our Lash Types</h3>
+    <img src="Images/Eyelashes.png" alt="Our Lash Types" class="lashes-image" />
+  </section>
+
+  <section id="owner" class="owner">
+    <h2>Owner Profile</h2>
+    <div class="owner-details">
+      <img src="Images/Owner.png" class="owner-image" />
+      <div>
+        <p>I'm the beautiful Teena, the pationate founder and creative force behind Ik Lash and Beauty Station. With a
+          love for beauty
+          and commitment to empowering individuals to feel confident and radiant, I started Ik Lash to bring
+          high-quality,
+          luxurious eyelash products to beauty enthusiasts.</p>
+        <p>With experience working as professional model and a certificate from Beauty college, I have dedicated my
+          career to perfecting the art of bringing out the beauty of a person. Each </p>
+        <p>At Ik Lash my mission is simple: to inspire confidence, celebrate indivuality, and deliver quality that make
+          everyone feel beautify both inside and out.</p>
+
+      </div>
+    </div>
+
+  </section>
+
+  <section id="form" class="form">
+    <h2>Contact Ik Lash</h2>
+    <div style="display: flex;">
+      <form>
+        <h3>Via WhatsApp</h3>
+        <label for="name">Full Name</label>
+        <input type="text" class="name" id="name" placeholder="e.g. Sexy Teena">
+        <label for="email">Email Address</label>
+        <input type="email" class="email" id="email" placeholder="e.g. sextteena@email.com">
+        <label for="">Gender</label>
+        <div class="gender">
+          <input type="radio" id="handsome" name="gender" value="handsome">
+          <label for="handsome">Handsome</label>
+          <input type="radio" id="beauty" name="gender" value="beauty">
+          <label for="beauty">Beauty</label>
+        </div>
+        <label for="message">Message</label>
+        <textarea class="message" id="message" placeholder="Enter your message here..."></textarea>
+        <button type="button" onclick="sendwhatsapp()">Send via WhatsApp</button>
+      </form>
+      <section id="contact" class="contact">
+        <h3>Contact Us On</h3>
+        <label for="phone">Phone</label>
+        <a href="tel:+60169900013" id="phone">+60169900013</a>
+        <label for="email">Email</label>
+        <a href="mailto:ik.beautystation@gmail.com" id="email">ik.beautystation@gmail.com</a>
+      </section>
+
+    </div>
+
+  </section>
+
+  <footer>
+    &copy; 2025 Elegant Lashes. All rights reserved.
+  </footer>
+
+  <script>
+    function scrollToSection(id) {
+      const section = document.getElementById(id);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function sendwhatsapp() {
+      var phonenumber = +6582647148
+
+      var name = document.querySelector(".name").value;
+      var email = document.querySelector(".email").value;
+      var gender = document.querySelector('input[name="gender"]:checked').value;
+      var message = document.querySelector(".message").value;
+
+      var url = "https://wa.me/" + phonenumber + "?text="
+        + "*Name :* " + name + "%0a"
+        + "*Email :* " + email + "%0a"
+        + "*Gender :* " + gender + "%0a"
+        + "*Message :* " + message + "%0a%0a"
+
+      window.open(url, '_blank').focus();
+    }
+  </script>
+</body>
+
+</html>
